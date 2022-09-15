@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- daisy ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/2154b50587.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="w-10/12 mx-auto">
+    <header class="mt-12">
+        <div class="bg-base-100 text-center">
+            <h1 class="normal-case text-5xl font-bold">Blog...</h1>
+        </div>
+        <hr class="m-5">
+    </header>
+    <section class="m-20">
+        <div>
+            <h1 class="text-2xl font-bold"> 1. what is the difference between local storage and session storage ?</h1>
+            <br>
+            <p class="text-lg font-normal">sessionStorage is similar to localStorage, The difference is that while data
+                in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a
+                document is loaded in a particular tab in the browser, a unique page session gets created and assigned
+                to that particular tab.</p>
+        </div>
+        <br>
+        <div>
+            <h1 class="text-2xl font-bold">2. Define block scope and global scope.</h1>
+            <br>
+            <p class="text-lg font-normal">A variable exists inside or outside a block. If a variable is
+                declared outside all functions or curly braces ( { } ), it exists in the <span class="text-2xl">global
+                    scope</span>. The
+                global
+                variables can be accessed by any line of code in the program, including inside blocks. <br>
+                <br>
+                <span class="text-2xl">This scope restricts the variable that is declared inside a specific block, from
+                    access by the
+                    outside of the block.</span> The let & const keyword facilitates the variables to be block scoped.
+                In order
+                to access the variables of that specific block, we need to create an object for it.
+            </p>
+        </div>
+        <br>
+        <div>
+            <h1 class="text-2xl font-bold">3.What is event loop in JavaScript ??</h1>
+            <br>
+            <p class="text-lg font-normal">The Event Loop has one simple job to monitor the Call Stack and the
+                Callback Queue or Message Queue. <br>
+                When any Asynchronous event occur such as setTimeOut or promises...
+                Then these task takes some time to complete I/O if they have any.
+                If they completed their I/O or don't have any, then they simply put into
+                message queue or callback queue. Then event loop will firstly execute the
+                call stack tasks and then look for callback or message queue and then execute it.
+            </p>
+        </div>
+        <br>
+        <div>
+            <h1 class="text-2xl font-bold">4.What is undefined ??</h1>
+            <br>
+            <p class="text-lg font-normal"><span class="text-2xl">A variable that has not been assigned a
+                    value is of
+                    type
+                    undefined.</span> A method
+                or statement also returns undefined if the variable that is being evaluated does not have an assigned
+                value. A function returns undefined if a value was not returned .
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
